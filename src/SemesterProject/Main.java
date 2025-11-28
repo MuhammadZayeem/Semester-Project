@@ -1,12 +1,11 @@
 package SemesterProject;
 
-import SemesterProject.Body.FrontGlass;
+import SemesterProject.Body.FrontLaminatedGlass;
+import SemesterProject.Body.Glass;
 
 public class Main {
     public static void main(String[] args) {
-        FrontGlass frontGlass=new FrontGlass("CB71",25,15,3500);
-        frontGlass.addQuantity(55);
-        frontGlass.displayDetails();
+
 
     }
 }

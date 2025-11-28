@@ -10,24 +10,24 @@ public abstract class Part {
     // Attributes
     // -------------------------
 
-    private String name;
-    private String category;
-    private String carModel;
-    private int quantity;
-    private int threshold;
-    private double unitPrice;
+    protected String name;
+    protected String category;
+    protected String carChasis;
+    protected int quantity;
+    protected int threshold;
+    protected double unitPrice;
     //private Supplier supplier;
 
     // -------------------------
     // Constructor
     // -------------------------
-    public Part( String name, String category, String carModel,
+    public Part( String name, String category, String carChasis,
                 int quantity, int threshold, double unitPrice/*Supplier supplier*/) {
 
 
         this.name = name;
         this.category = category;
-        this.carModel = carModel;
+        this.carChasis = carChasis;
         this.quantity = quantity;
         this.threshold = threshold;
         this.unitPrice = unitPrice;
@@ -77,7 +77,7 @@ public abstract class Part {
 
     public String getName() { return name; }
     public String getCategory() { return category; }
-    public String getCarModel() { return carModel; }
+    public String getCarModel() { return carChasis; }
     public int getQuantity() { return quantity; }
     public int getThreshold() { return threshold; }
     public double getUnitPrice() { return unitPrice; }

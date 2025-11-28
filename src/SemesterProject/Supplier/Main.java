@@ -1,5 +1,5 @@
 package SemesterProject.Supplier;
-import SemesterProject.Body.FrontGlass;
+import SemesterProject.Body.FrontLaminatedGlass;
 import SemesterProject.Body.RearGlass;
 import SemesterProject.InventoryManagment.InventoryManager;
 import SemesterProject.Part;
@@ -30,7 +30,7 @@ public class Main {
         // --------------------------
         // 2. CREATE PARTS
         // --------------------------
-        Part frontGlass = new FrontGlass("Mehran-2009", 5, 2, 3500);
+        Part frontGlass = new FrontLaminatedGlass("Mehran-2009", 5, 2, 3500);
         Part rearGlass  = new RearGlass("Civic-2018", 8, 3, 6500);
 
         // Add to inventory
