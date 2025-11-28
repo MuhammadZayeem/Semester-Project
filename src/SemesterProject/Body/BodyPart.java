@@ -4,8 +4,7 @@ import SemesterProject.Part;
 
 public class BodyPart extends Part {
 
-    public BodyPart(String name, String chasisModel,
-                    int quantity, int threshold, double unitPrice) {
+    public BodyPart(String name, String chasisModel,int quantity, int threshold, double unitPrice) {
 
         super(name,"Body", chasisModel, quantity, threshold, unitPrice);
     }

@@ -7,7 +7,7 @@ public class Glass extends Part {
     public Glass(String name, String chasisModel,
                  int quantity, int threshold, double unitPrice) {
 
-        super(name, "Glass", chasisModel, quantity, threshold, unitPrice);
+        super(name, "Glass", chasisModel,quantity, threshold, unitPrice);
     }
 
     @Override
