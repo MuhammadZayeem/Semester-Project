@@ -13,13 +13,13 @@ public abstract class Part {
     private int quantity;
     private int threshold;
     private double unitPrice;
-    private Supplier supplier;
+    //private Supplier supplier;
 
     // -------------------------
     // Constructor
     // -------------------------
     public Part(String partID, String name, String category, String carModel,
-                int quantity, int threshold, double unitPrice, Supplier supplier) {
+                int quantity, int threshold, double unitPrice/*Supplier supplier*/) {
 
         this.partID = partID;
         this.name = name;
@@ -28,7 +28,7 @@ public abstract class Part {
         this.quantity = quantity;
         this.threshold = threshold;
         this.unitPrice = unitPrice;
-        this.supplier = supplier;
+       // this.supplier = supplier;
     }
 
     // -------------------------
@@ -78,10 +78,10 @@ public abstract class Part {
     public int getQuantity() { return quantity; }
     public int getThreshold() { return threshold; }
     public double getUnitPrice() { return unitPrice; }
-    public Supplier getSupplier() { return supplier; }
+    //public Supplier getSupplier() { return supplier; }
 
     public void setQuantity(int quantity) { this.quantity = quantity; }
     public void setThreshold(int threshold) { this.threshold = threshold; }
     public void setUnitPrice(double unitPrice) { this.unitPrice = unitPrice; }
-    public void setSupplier(Supplier supplier) { this.supplier = supplier; }
+  //  public void setSupplier(Supplier supplier) { this.supplier = supplier; }
 }
