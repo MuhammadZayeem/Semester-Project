@@ -1,6 +1,6 @@
 package SemesterProject.Supplier;
 
-import SemesterProject.Exception.Part;
+import SemesterProject.Part;
 
 import java.util.ArrayList;
 import java.util.List;

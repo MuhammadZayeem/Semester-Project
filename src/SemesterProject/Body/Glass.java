@@ -1,6 +1,6 @@
 package SemesterProject.Body;
 
-import SemesterProject.Exception.Part;
+import SemesterProject.Part;
 
 public class Glass extends Part {
 

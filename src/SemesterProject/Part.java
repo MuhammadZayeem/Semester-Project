@@ -1,12 +1,15 @@
-package SemesterProject.Exception;
+package SemesterProject;
 
+
+import SemesterProject.Exception.LowStockException;
+import SemesterProject.Exception.NegativeStockException;
 
 public abstract class Part {
 
     // -------------------------
     // Attributes
     // -------------------------
-    private String partID;
+
     private String name;
     private String category;
     private String carModel;
@@ -18,10 +21,10 @@ public abstract class Part {
     // -------------------------
     // Constructor
     // -------------------------
-    public Part(String partID, String name, String category, String carModel,
+    public Part( String name, String category, String carModel,
                 int quantity, int threshold, double unitPrice/*Supplier supplier*/) {
 
-        this.partID = partID;
+
         this.name = name;
         this.category = category;
         this.carModel = carModel;
@@ -71,7 +74,7 @@ public abstract class Part {
     // Getters & Setters
     // -------------------------
 
-    public String getPartID() { return partID; }
+
     public String getName() { return name; }
     public String getCategory() { return category; }
     public String getCarModel() { return carModel; }
