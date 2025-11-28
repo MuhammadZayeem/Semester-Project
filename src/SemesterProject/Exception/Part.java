@@ -1,4 +1,4 @@
-package SemesterProject;
+package SemesterProject.Exception;
 
 
 public abstract class Part {

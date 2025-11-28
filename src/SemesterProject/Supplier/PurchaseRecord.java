@@ -1,6 +1,6 @@
 package SemesterProject.Supplier;
 
-import SemesterProject.Part;
+import SemesterProject.Exception.Part;
 
 import java.util.Date;
 

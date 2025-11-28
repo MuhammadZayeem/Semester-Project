@@ -1,6 +1,6 @@
 package SemesterProject.Body;
 
-import SemesterProject.Part;
+import SemesterProject.Exception.Part;
 
 public class BodyPart extends Part {
 
