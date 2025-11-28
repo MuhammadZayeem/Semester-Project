@@ -1,6 +1,5 @@
 package SemesterProject;
 
-
 public abstract class Part {
 
     // -------------------------

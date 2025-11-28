@@ -9,7 +9,6 @@ public class BodyPart extends Part {
     // Constructor
     public BodyPart(String partID, String name, String carModel,
                     int quantity, int threshold, double unitPrice, String material, boolean painted) {
-
         super(partID, name, "Body", carModel, quantity, threshold, unitPrice);
 
         this.material = material;
