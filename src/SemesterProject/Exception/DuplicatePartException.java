@@ -1,7 +1,8 @@
-package SemesterProject;
+package SemesterProject.Exception;
 public class DuplicatePartException extends Exception {
 
-    public DuplicatePartException() {
+    public DuplicatePartException()
+    {
         super("Part already exists in the inventory!");
     }
 

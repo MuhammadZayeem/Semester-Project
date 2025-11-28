@@ -1,4 +1,4 @@
-package SemesterProject;
+package SemesterProject.Exception;
 public class InvalidLoginException extends Exception {
 
     public InvalidLoginException() {

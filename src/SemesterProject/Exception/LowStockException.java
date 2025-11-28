@@ -1,4 +1,4 @@
-package SemesterProject;
+package SemesterProject.Exception;
 public class LowStockException extends Exception {
 
     public LowStockException() {
