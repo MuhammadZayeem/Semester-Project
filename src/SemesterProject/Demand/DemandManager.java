@@ -113,4 +113,9 @@ public class DemandManager {
         System.out.println("----------------------------------");
         System.out.println("TOTAL COST: " + total);
     }
+
+    public int getDemandCount() {
+        return demandList.size();
+    }
+
 }

@@ -32,7 +32,7 @@ public abstract class Part {
         this.quantity = quantity;
         this.threshold = threshold;
         this.unitPrice = unitPrice;
-       // this.supplier = supplier;
+        this.supplier = supplier;
     }
 
     // -------------------------
