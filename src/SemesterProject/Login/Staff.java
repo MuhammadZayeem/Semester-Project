@@ -4,7 +4,7 @@ import SemesterProject.User;
 public class Staff extends User {
 
     public Staff(String userId,String username,String password,String fullName,String contactNumber) {
-        super(userId, username, password, fullName, contactNumber);
+        super(userId, username, password, fullName, contactNumber,UserRoles.STAFF);
     }
 
     // ---------------- Abstract Method Implementation
@@ -58,5 +58,8 @@ public class Staff extends User {
             System.out.println((i+1)+". "+actions[i]);
         }
         System.out.println();
+    }
+    public void requestPasswordReset(LoginManager manager) {
+        manager.requestPasswordReset(getUsername());
     }
 }

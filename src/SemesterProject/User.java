@@ -1,4 +1,6 @@
 package SemesterProject;
+import SemesterProject.Login.UserRoles;
+
 import java.time.LocalDateTime;
 import java.util.Objects;
 
@@ -9,16 +11,17 @@ public abstract class User {
     private String HashPassword;      // Safe practice: store hash, not raw password
     private String fullName;
     private String contactNumber;
-    //private final UserRole role;
+    private final UserRoles role;
     private LocalDateTime lastLoginTime;
+    private boolean resetApproved = false;
 
-    public User(String UserId,String username,String SimplePassword,String fullName,String contactNumber/*UserRole role*/)
+    public User(String UserId,String username,String SimplePassword,String fullName,String contactNumber,UserRoles role)
     {
         this.UserId=Objects.requireNonNull(UserId,"User ID cannot be null");
         this.username=Objects.requireNonNull(username,"Username cannot be null");
         this.fullName=Objects.requireNonNull(fullName,"Full name cannot be null");
         this.contactNumber=Objects.requireNonNull(contactNumber,"Contact number cannot be null");
-        //this.role = Objects.requireNonNull(role, "Role cannot be null");
+        this.role = Objects.requireNonNull(role, "Role cannot be null");
         this.HashPassword=EncryptPassword(SimplePassword);
     }
     protected String EncryptPassword(String Password) {
@@ -27,7 +30,6 @@ public abstract class User {
     public boolean PasswordValidation(String inputpassword) {
         return Objects.equals(HashPassword,EncryptPassword(inputpassword));
     }
-
 
     public void updatePassword(String newPassword) {
         this.HashPassword=EncryptPassword(newPassword);
@@ -65,9 +67,9 @@ public abstract class User {
     public String getContactNumber() {
         return contactNumber;
     }
-  //  public UserRole getRole() {
-   //     return role;
-   // }
+    public UserRoles getRole() {
+        return role;
+    }
 
     public LocalDateTime getLastLoginTime() {
         return lastLoginTime;
@@ -78,6 +80,14 @@ public abstract class User {
         else{
              return "Never Logged In";}
     }
+    public boolean isResetApproved() {
+        return resetApproved;
+    }
+
+    public void setResetApproved(boolean resetApproved) {
+        this.resetApproved = resetApproved;
+    }
+
 
     public void displayProfile() {
         System.out.println("\n================== USER PROFILE ==================");

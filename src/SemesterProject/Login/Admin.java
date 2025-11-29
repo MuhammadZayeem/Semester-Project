@@ -7,7 +7,7 @@ import SemesterProject.Exception.UserNotFoundException;
 public class Admin extends User {
 
     public Admin(String userId, String username, String password, String fullName, String contactNumber) {
-        super(userId, username, password, fullName, contactNumber);
+        super(userId, username, password, fullName, contactNumber,UserRoles.ADMIN);
     }
 
     @Override
@@ -87,5 +87,14 @@ public class Admin extends User {
         }
         System.out.println();
     }
+
+    public void approveStaffPassword(LoginManager manager, String staffUsername, String newPassword) {
+        manager.approvePasswordReset(getUsername(), staffUsername, newPassword);
+    }
+
+    public void viewPendingRequests(LoginManager manager) {
+        manager.showPendingRequests();
+    }
+
 
 }
