@@ -95,6 +95,16 @@ public class Admin extends User {
     public void viewPendingRequests(LoginManager manager) {
         manager.showPendingRequests();
     }
+    public void changeOwnPassword(String oldPassword, String newPassword) {
+        if (!PasswordValidation(oldPassword)) {
+            System.out.println("Old password is incorrect!");
+            return;
+        }
+        updatePassword(newPassword);
+        System.out.println("Your password has been successfully changed.");
+    }
+
+
 
 
 }
