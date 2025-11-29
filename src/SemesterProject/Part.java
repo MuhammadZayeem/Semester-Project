@@ -23,7 +23,7 @@ public abstract class Part {
     // Constructor
     // -------------------------
     public Part( String name, String category, String carChasis,
-                int quantity, int threshold, double unitPrice/*Supplier supplier*/) {
+                int quantity, int threshold, double unitPrice,Supplier supplier) {
 
 
         this.name = name;

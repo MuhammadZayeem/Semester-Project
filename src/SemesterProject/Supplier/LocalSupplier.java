@@ -1,5 +1,7 @@
 package SemesterProject.Supplier;
 
+import SemesterProject.Part;
+
 public class LocalSupplier extends Supplier {
 
     public LocalSupplier(String name, String contact, String email,
@@ -17,5 +19,10 @@ public class LocalSupplier extends Supplier {
         System.out.println("Address: " + getAddress());
         System.out.println("Specialization: " + getSpecialization());
         System.out.println("------------------------------------");
+    }
+
+    @Override
+    public void addSuppliedPart(Part part) {
+        super.addSuppliedPart(part);
     }
 }

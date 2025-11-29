@@ -10,14 +10,14 @@ public abstract class Supplier  {
     // -------------------------
     // Attributes
     // -------------------------
-    private String name;
-    private String contactNumber;
-    private String email;
-    private String address;
-    private String specialization;  // Example: "Glass", "Bumper", "Belts"
+    protected String name;
+    protected String contactNumber;
+    protected String email;
+    protected String address;
+    protected String specialization;  // Example: "Glass", "Bumper", "Belts"
 
-    private List<Part> suppliedParts;       // Which parts this supplier provides
-    private List<PurchaseRecord> history;   // Purchase History
+    protected List<Part> suppliedParts;       // Which parts this supplier provides
+    protected List<PurchaseRecord> history;   // Purchase History
 
 
     // -------------------------

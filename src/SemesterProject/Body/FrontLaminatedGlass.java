@@ -1,7 +1,9 @@
 package SemesterProject.Body;
 
-public class FrontLaminatedGlass extends Glass {
+import SemesterProject.Supplier.LocalSupplier;
+import SemesterProject.Supplier.Supplier;
 
+public class FrontLaminatedGlass extends Glass {
     public FrontLaminatedGlass(String carChasis, int quantity, int threshold, double unitPrice) {
 
         super("FLG", carChasis, quantity, threshold, unitPrice);
